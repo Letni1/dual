@@ -144,8 +144,9 @@ def analyze(context, perf):
     ax4.set_ylabel('Cash\n({})'.format(quote_currency))
     start, end = ax4.get_ylim()
     ax4.yaxis.set_ticks(np.arange(0, end, end / 5))
-
+    plt.savefig('dual.png')
     plt.show()
+
 
 
 if __name__ == '__main__':
